@@ -1,10 +1,11 @@
 ﻿using System;
+using System.Linq;
 
 class Solution
 {
     static long AVeryBigSum(long[] ar)
     {
-
+        return ar.Sum();
     }
 
     static void Main()
