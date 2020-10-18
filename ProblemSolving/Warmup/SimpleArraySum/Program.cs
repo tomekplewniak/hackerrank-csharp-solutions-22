@@ -1,35 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 
 class Solution
 {
-
-    /*
-     * Complete the simpleArraySum function below.
-     */
-    static int simpleArraySum(int[] ar)
+    static int SimpleArraySum(int[] ar)
     {
-        /*
-         * Write your code here.
-         */
 
     }
 
-    static void Main(string[] args)
+    static void Main()
     {
-        TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
+        var testData = "1 2 3 4 10 11";
 
-        int arCount = Convert.ToInt32(Console.ReadLine());
+        int[] ar = Array.ConvertAll(testData.Split(' '), arTemp => Convert.ToInt32(arTemp));
+        int result = SimpleArraySum(ar);
 
-        int[] ar = Array.ConvertAll(Console.ReadLine().Split(' '), arTemp => Convert.ToInt32(arTemp))
-        ;
-        int result = simpleArraySum(ar);
-
-        textWriter.WriteLine(result);
-
-        textWriter.Flush();
-        textWriter.Close();
+        Console.WriteLine(result);
     }
 }
