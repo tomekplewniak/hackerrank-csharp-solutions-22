@@ -1,10 +1,11 @@
 ﻿using System;
+using System.Linq;
 
 class Solution
 {
     static int SimpleArraySum(int[] ar)
     {
-
+        return ar.Sum();
     }
 
     static void Main()
