@@ -1,10 +1,13 @@
 ﻿using System;
+using System.Linq;
 
 class Solution
 {
     static void PlusMinus(int[] arr)
     {
-
+        Console.WriteLine("{0:F6}", (double)arr.Count(x => x > 0) / arr.Count());
+        Console.WriteLine("{0:F6}", (double)arr.Count(x => x < 0) / arr.Count());
+        Console.WriteLine("{0:F6}", (double)arr.Count(x => x == 0) / arr.Count());
     }
 
     static void Main()
