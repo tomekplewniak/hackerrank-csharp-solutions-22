@@ -1,11 +1,14 @@
 ﻿using System.Collections.Generic;
 using System;
+using System.Linq;
 
 class Result
 {
     public static int BirthdayCakeCandles(List<int> candles)
     {
+        var max = candles.Max();
 
+        return candles.Count(val => val == max);
     }
 }
 
