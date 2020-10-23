@@ -1,8 +1,31 @@
-﻿class Solution
+﻿using System;
+
+class Solution
 {
     static void CountApplesAndOranges(int s, int t, int a, int b, int[] apples, int[] oranges)
     {
+        var applesCount = 0;
+        var orangesCount = 0;
 
+        for (int i = 0; i < apples.Length; i++)
+        {
+            if (a + apples[i] >= s && a + apples[i] <= t)
+            {
+                applesCount++;
+            }
+        }
+
+        Console.WriteLine(applesCount);
+
+        for (int i = 0; i < oranges.Length; i++)
+        {
+            if (b + oranges[i] >= s && b + oranges[i] <= t)
+            {
+                orangesCount++;
+            }
+        }
+
+        Console.WriteLine(orangesCount);
     }
 
     static void Main()
