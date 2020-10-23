@@ -5,7 +5,26 @@ class Result
 {
     public static int DiagonalDifference(List<List<int>> arr)
     {
+        var diag1 = 0;
+        var diag2 = 0;
 
+        for (int i = 0; i < arr.Count; i++)
+        {
+            for (int j = 0; j < arr.Count; j++)
+            {
+                if (i == j)
+                {
+                    diag1 += arr[i][j];
+                }
+
+                if (i + j == arr.Count - 1)
+                {
+                    diag2 += arr[i][j];
+                }
+            }
+        }
+
+        return Math.Abs(diag1 - diag2);
     }
 }
 
