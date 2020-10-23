@@ -1,40 +1,21 @@
-﻿using System.CodeDom.Compiler;
-using System.Collections.Generic;
-using System.Collections;
-using System.ComponentModel;
-using System.Diagnostics.CodeAnalysis;
-using System.Globalization;
-using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Runtime.Serialization;
-using System.Text.RegularExpressions;
-using System.Text;
+﻿using System.Collections.Generic;
 using System;
 
 class Solution
 {
-
-    // Complete the compareTriplets function below.
-    static List<int> compareTriplets(List<int> a, List<int> b)
+    static List<int> CompareTriplets(List<int> a, List<int> b)
     {
-
 
     }
 
-    static void Main(string[] args)
+    static void Main()
     {
-        TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
+        var a = new List<int>() { 5, 6, 7 };
 
-        List<int> a = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(aTemp => Convert.ToInt32(aTemp)).ToList();
+        var b = new List<int>() { 3, 6, 10 };
 
-        List<int> b = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(bTemp => Convert.ToInt32(bTemp)).ToList();
+        List<int> result = CompareTriplets(a, b);
 
-        List<int> result = compareTriplets(a, b);
-
-        textWriter.WriteLine(String.Join(" ", result));
-
-        textWriter.Flush();
-        textWriter.Close();
+        Console.WriteLine(String.Join(" ", result));
     }
 }
