@@ -4,7 +4,28 @@ class Solution
 {
     static int[] BreakingRecords(int[] scores)
     {
+        var best = scores[0];
+        var bestCouner = 0;
 
+        var worst = scores[0];
+        var worstCounter = 0;
+
+        foreach (var i in scores)
+        {
+            if (i > best)
+            {
+                best = i;
+                bestCouner++;
+            }
+
+            if (i < worst)
+            {
+                worst = i;
+                worstCounter++;
+            }
+        }
+
+        return new int[] { bestCouner, worstCounter };
     }
 
     static void Main()
