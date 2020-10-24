@@ -1,40 +1,19 @@
-﻿using System.CodeDom.Compiler;
-using System.Collections.Generic;
-using System.Collections;
-using System.ComponentModel;
-using System.Diagnostics.CodeAnalysis;
-using System.Globalization;
-using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Runtime.Serialization;
-using System.Text.RegularExpressions;
-using System.Text;
-using System;
+﻿using System;
 
 class Solution
 {
-
-    // Complete the breakingRecords function below.
-    static int[] breakingRecords(int[] scores)
+    static int[] BreakingRecords(int[] scores)
     {
-
 
     }
 
-    static void Main(string[] args)
+    static void Main()
     {
-        TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
+        var testData = "3 4 21 36 10 28 35 5 24 42";
 
-        int n = Convert.ToInt32(Console.ReadLine());
+        int[] scores = Array.ConvertAll(testData.Split(' '), scoresTemp => Convert.ToInt32(scoresTemp));
+        int[] result = BreakingRecords(scores);
 
-        int[] scores = Array.ConvertAll(Console.ReadLine().Split(' '), scoresTemp => Convert.ToInt32(scoresTemp))
-        ;
-        int[] result = breakingRecords(scores);
-
-        textWriter.WriteLine(string.Join(" ", result));
-
-        textWriter.Flush();
-        textWriter.Close();
+        Console.WriteLine(string.Join(" ", result));
     }
 }
