@@ -1,4 +1,3 @@
-﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
@@ -31,7 +30,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppleAndOrange", "Implement
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BreakingTheRecords", "Implementation\BreakingTheRecords\BreakingTheRecords.csproj", "{206BDE1B-00A0-4304-9ADA-05614BB76CBB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillDivision", "Implementation\BillDivision\BillDivision.csproj", "{820F56FF-74DF-4D0D-9050-DEFA5B2823E4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CatsAndAMouse", "Implementation\CatsAndAMouse\CatsAndAMouse.csproj", "{238FF756-1848-469E-A6DB-0F2ACD1AC244}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,10 +86,10 @@ Global
 		{206BDE1B-00A0-4304-9ADA-05614BB76CBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{206BDE1B-00A0-4304-9ADA-05614BB76CBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{206BDE1B-00A0-4304-9ADA-05614BB76CBB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{820F56FF-74DF-4D0D-9050-DEFA5B2823E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{820F56FF-74DF-4D0D-9050-DEFA5B2823E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{820F56FF-74DF-4D0D-9050-DEFA5B2823E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{820F56FF-74DF-4D0D-9050-DEFA5B2823E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{238FF756-1848-469E-A6DB-0F2ACD1AC244}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{238FF756-1848-469E-A6DB-0F2ACD1AC244}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{238FF756-1848-469E-A6DB-0F2ACD1AC244}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{238FF756-1848-469E-A6DB-0F2ACD1AC244}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -108,7 +107,7 @@ Global
 		{CDBB1610-B900-455E-9445-920449301937} = {43CBD408-B601-45ED-BB12-9620E26E17B7}
 		{44AE309C-68F0-41B8-8553-D244FACA6C06} = {43CBD408-B601-45ED-BB12-9620E26E17B7}
 		{206BDE1B-00A0-4304-9ADA-05614BB76CBB} = {43CBD408-B601-45ED-BB12-9620E26E17B7}
-		{820F56FF-74DF-4D0D-9050-DEFA5B2823E4} = {43CBD408-B601-45ED-BB12-9620E26E17B7}
+		{238FF756-1848-469E-A6DB-0F2ACD1AC244} = {43CBD408-B601-45ED-BB12-9620E26E17B7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C887DAFC-6263-4B10-8085-677E61DEBA6B}
