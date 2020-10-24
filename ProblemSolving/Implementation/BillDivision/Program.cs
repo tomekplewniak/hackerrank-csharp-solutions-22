@@ -1,39 +1,20 @@
-﻿using System.CodeDom.Compiler;
-using System.Collections.Generic;
-using System.Collections;
-using System.ComponentModel;
-using System.Diagnostics.CodeAnalysis;
-using System.Globalization;
-using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Runtime.Serialization;
-using System.Text.RegularExpressions;
-using System.Text;
-using System;
+﻿using System.Collections.Generic;
 
 class Solution
 {
-
-    // Complete the bonAppetit function below.
-    static void bonAppetit(List<int> bill, int k, int b)
+    static void BonAppetit(List<int> bill, int k, int b)
     {
-
 
     }
 
-    static void Main(string[] args)
+    static void Main()
     {
-        string[] nk = Console.ReadLine().TrimEnd().Split(' ');
+        int k = 1;
 
-        int n = Convert.ToInt32(nk[0]);
+        List<int> bill = new List<int>() { 3, 10, 2, 9 };
 
-        int k = Convert.ToInt32(nk[1]);
+        int b = 12;
 
-        List<int> bill = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(billTemp => Convert.ToInt32(billTemp)).ToList();
-
-        int b = Convert.ToInt32(Console.ReadLine().Trim());
-
-        bonAppetit(bill, k, b);
+        BonAppetit(bill, k, b);
     }
 }
