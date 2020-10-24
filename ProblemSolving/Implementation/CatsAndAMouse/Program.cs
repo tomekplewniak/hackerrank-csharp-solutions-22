@@ -1,49 +1,32 @@
-﻿using System.CodeDom.Compiler;
+﻿using System;
 using System.Collections.Generic;
-using System.Collections;
-using System.ComponentModel;
-using System.Diagnostics.CodeAnalysis;
-using System.Globalization;
-using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Runtime.Serialization;
-using System.Text.RegularExpressions;
-using System.Text;
-using System;
 
 class Solution
 {
-
-    // Complete the catAndMouse function below.
-    static string catAndMouse(int x, int y, int z)
+    static string CatAndMouse(int x, int y, int z)
     {
-
 
     }
 
-    static void Main(string[] args)
+    static void Main()
     {
-        TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
-
-        int q = Convert.ToInt32(Console.ReadLine());
-
-        for (int qItr = 0; qItr < q; qItr++)
+        var testData = new List<List<int>>()
         {
-            string[] xyz = Console.ReadLine().Split(' ');
+            new List<int>(){1, 2, 3 },
+            new List<int>(){1, 3, 2 }
+        };
 
-            int x = Convert.ToInt32(xyz[0]);
+        for (int qItr = 0; qItr < testData.Count; qItr++)
+        {
+            int x = testData[qItr][0];
 
-            int y = Convert.ToInt32(xyz[1]);
+            int y = testData[qItr][1];
 
-            int z = Convert.ToInt32(xyz[2]);
+            int z = testData[qItr][2];
 
-            string result = catAndMouse(x, y, z);
+            string result = CatAndMouse(x, y, z);
 
-            textWriter.WriteLine(result);
+            Console.WriteLine(result);
         }
-
-        textWriter.Flush();
-        textWriter.Close();
     }
 }
