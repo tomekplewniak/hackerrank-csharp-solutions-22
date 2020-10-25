@@ -1,38 +1,28 @@
-﻿using System.CodeDom.Compiler;
-using System.Collections.Generic;
-using System.Collections;
-using System.ComponentModel;
-using System.Diagnostics.CodeAnalysis;
-using System.Globalization;
-using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Runtime.Serialization;
-using System.Text.RegularExpressions;
-using System.Text;
-using System;
+﻿using System;
 
 class Solution
 {
-
-    // Complete the camelcase function below.
-    static int camelcase(string s)
+    static int Camelcase(string s)
     {
+        var wordsCounter = 1;
 
+        for (int i = 0; i < s.Length; i++)
+        {
+            if (Char.IsUpper(s[i]))
+            {
+                wordsCounter++;
+            }
+        }
 
+        return wordsCounter;
     }
 
-    static void Main(string[] args)
+    static void Main()
     {
-        TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
+        string s = "saveChangesInTheEditor";
 
-        string s = Console.ReadLine();
+        int result = Camelcase(s);
 
-        int result = camelcase(s);
-
-        textWriter.WriteLine(result);
-
-        textWriter.Flush();
-        textWriter.Close();
+        Console.WriteLine(result);
     }
 }
