@@ -1,11 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
 
 class Solution
 {
     static string[] BigSorting(string[] unsorted)
     {
+        Array.Sort(unsorted, (string a, string b) => {
+            if (a.Length == b.Length)
+                return string.Compare(a, b, StringComparison.Ordinal);
+            return a.Length - b.Length;
+        });
 
+        return unsorted;
     }
 
     static void Main()
