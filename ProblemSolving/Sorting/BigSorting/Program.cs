@@ -1,46 +1,33 @@
-﻿using System.CodeDom.Compiler;
+﻿using System;
 using System.Collections.Generic;
-using System.Collections;
-using System.ComponentModel;
-using System.Diagnostics.CodeAnalysis;
-using System.Globalization;
-using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Runtime.Serialization;
-using System.Text.RegularExpressions;
-using System.Text;
-using System;
 
 class Solution
 {
-
-    // Complete the bigSorting function below.
-    static string[] bigSorting(string[] unsorted)
+    static string[] BigSorting(string[] unsorted)
     {
-
 
     }
 
-    static void Main(string[] args)
+    static void Main()
     {
-        TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
-
-        int n = Convert.ToInt32(Console.ReadLine());
-
-        string[] unsorted = new string[n];
-
-        for (int i = 0; i < n; i++)
+        string[] unsorted = new string[]
         {
-            string unsortedItem = Console.ReadLine();
+            "31415926535897932384626433832795",
+            "1",
+            "3",
+            "10",
+            "3",
+            "5"
+        };
+
+        for (int i = 0; i < unsorted.Length; i++)
+        {
+            string unsortedItem = unsorted[i];
             unsorted[i] = unsortedItem;
         }
 
-        string[] result = bigSorting(unsorted);
+        string[] result = BigSorting(unsorted);
 
-        textWriter.WriteLine(string.Join("\n", result));
-
-        textWriter.Flush();
-        textWriter.Close();
+        Console.WriteLine(string.Join("\n", result));
     }
 }
