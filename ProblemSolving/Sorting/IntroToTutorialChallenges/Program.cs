@@ -1,10 +1,11 @@
 ﻿using System;
+using System.Linq;
 
 class Solution
 {
     static int IntroTutorial(int V, int[] arr)
     {
-
+        return Array.IndexOf(arr, V);
     }
 
     static void Main()
