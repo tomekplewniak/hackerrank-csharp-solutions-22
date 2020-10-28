@@ -42,7 +42,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sorting", "Sorting", "{D41C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntroToTutorialChallenges", "Sorting\IntroToTutorialChallenges\IntroToTutorialChallenges.csproj", "{C732CD15-9EB8-4665-BAC7-81F466AE41D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigSorting", "Sorting\BigSorting\BigSorting.csproj", "{15700060-EA7A-4F4A-A25E-2B57E13E5019}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BigSorting", "Sorting\BigSorting\BigSorting.csproj", "{15700060-EA7A-4F4A-A25E-2B57E13E5019}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pangrams", "Strings\Pangrams\Pangrams.csproj", "{0ADD8663-587C-46C6-821D-624AF0B4D003}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -118,6 +120,10 @@ Global
 		{15700060-EA7A-4F4A-A25E-2B57E13E5019}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15700060-EA7A-4F4A-A25E-2B57E13E5019}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15700060-EA7A-4F4A-A25E-2B57E13E5019}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ADD8663-587C-46C6-821D-624AF0B4D003}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ADD8663-587C-46C6-821D-624AF0B4D003}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ADD8663-587C-46C6-821D-624AF0B4D003}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ADD8663-587C-46C6-821D-624AF0B4D003}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -140,6 +146,7 @@ Global
 		{9FD81264-D47F-493F-A2D2-12504BC7DD33} = {99A72F97-3A9A-426A-B52F-924F6BC177A0}
 		{C732CD15-9EB8-4665-BAC7-81F466AE41D2} = {D41C6E17-FAED-4D28-B8F4-0202EB8A416D}
 		{15700060-EA7A-4F4A-A25E-2B57E13E5019} = {D41C6E17-FAED-4D28-B8F4-0202EB8A416D}
+		{0ADD8663-587C-46C6-821D-624AF0B4D003} = {99A72F97-3A9A-426A-B52F-924F6BC177A0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C887DAFC-6263-4B10-8085-677E61DEBA6B}
