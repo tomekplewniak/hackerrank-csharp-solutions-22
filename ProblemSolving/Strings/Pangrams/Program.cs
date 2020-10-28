@@ -1,38 +1,18 @@
-﻿using System.CodeDom.Compiler;
-using System.Collections.Generic;
-using System.Collections;
-using System.ComponentModel;
-using System.Diagnostics.CodeAnalysis;
-using System.Globalization;
-using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Runtime.Serialization;
-using System.Text.RegularExpressions;
-using System.Text;
-using System;
+﻿using System;
 
 class Solution
 {
-
-    // Complete the pangrams function below.
-    static string pangrams(string s)
+    static string Pangrams(string s)
     {
-
 
     }
 
-    static void Main(string[] args)
+    static void Main()
     {
-        TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
+        string s = "We promptly judged antique ivory buckles for the next prize"
 
-        string s = Console.ReadLine();
+        string result = Pangrams(s);
 
-        string result = pangrams(s);
-
-        textWriter.WriteLine(result);
-
-        textWriter.Flush();
-        textWriter.Close();
+        Console.WriteLine(result);
     }
 }
