@@ -1,43 +1,22 @@
-﻿using System.CodeDom.Compiler;
+﻿using System;
 using System.Collections.Generic;
-using System.Collections;
-using System.ComponentModel;
-using System.Diagnostics.CodeAnalysis;
-using System.Globalization;
-using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Runtime.Serialization;
-using System.Text.RegularExpressions;
-using System.Text;
-using System;
 
 class Solution
 {
-
-    // Complete the findDigits function below.
-    static int findDigits(int n)
+    static int FindDigits(int n)
     {
-
 
     }
 
-    static void Main(string[] args)
+    static void Main()
     {
-        TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
+        List<int> testData = new List<int>() { 12, 1012 };
 
-        int t = Convert.ToInt32(Console.ReadLine());
-
-        for (int tItr = 0; tItr < t; tItr++)
+        for (int tItr = 0; tItr < testData.Count; tItr++)
         {
-            int n = Convert.ToInt32(Console.ReadLine());
+            int result = FindDigits(testData[tItr]);
 
-            int result = findDigits(n);
-
-            textWriter.WriteLine(result);
+            Console.WriteLine(result);
         }
-
-        textWriter.Flush();
-        textWriter.Close();
     }
 }
