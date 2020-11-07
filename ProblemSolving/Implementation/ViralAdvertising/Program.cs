@@ -1,38 +1,18 @@
-﻿using System.CodeDom.Compiler;
-using System.Collections.Generic;
-using System.Collections;
-using System.ComponentModel;
-using System.Diagnostics.CodeAnalysis;
-using System.Globalization;
-using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Runtime.Serialization;
-using System.Text.RegularExpressions;
-using System.Text;
-using System;
+﻿using System;
 
 class Solution
 {
-
-    // Complete the viralAdvertising function below.
-    static int viralAdvertising(int n)
+    static int ViralAdvertising(int n)
     {
-
 
     }
 
-    static void Main(string[] args)
+    static void Main()
     {
-        TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
+        int n = 3;
 
-        int n = Convert.ToInt32(Console.ReadLine());
+        int result = ViralAdvertising(n);
 
-        int result = viralAdvertising(n);
-
-        textWriter.WriteLine(result);
-
-        textWriter.Flush();
-        textWriter.Close();
+        Console.WriteLine(result);
     }
 }
