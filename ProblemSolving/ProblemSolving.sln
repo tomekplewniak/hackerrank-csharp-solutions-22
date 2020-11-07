@@ -46,7 +46,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BigSorting", "Sorting\BigSo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pangrams", "Strings\Pangrams\Pangrams.csproj", "{0ADD8663-587C-46C6-821D-624AF0B4D003}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindDigits", "Implementation\FindDigits\FindDigits.csproj", "{5BF82391-1649-4BAD-A6A2-2571DA9E7935}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FindDigits", "Implementation\FindDigits\FindDigits.csproj", "{5BF82391-1649-4BAD-A6A2-2571DA9E7935}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViralAdvertising", "Implementation\ViralAdvertising\ViralAdvertising.csproj", "{6BB2A57B-601A-4170-82FB-846F8658211E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -130,6 +132,10 @@ Global
 		{5BF82391-1649-4BAD-A6A2-2571DA9E7935}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BF82391-1649-4BAD-A6A2-2571DA9E7935}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BF82391-1649-4BAD-A6A2-2571DA9E7935}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BB2A57B-601A-4170-82FB-846F8658211E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BB2A57B-601A-4170-82FB-846F8658211E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BB2A57B-601A-4170-82FB-846F8658211E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BB2A57B-601A-4170-82FB-846F8658211E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -154,6 +160,7 @@ Global
 		{15700060-EA7A-4F4A-A25E-2B57E13E5019} = {D41C6E17-FAED-4D28-B8F4-0202EB8A416D}
 		{0ADD8663-587C-46C6-821D-624AF0B4D003} = {99A72F97-3A9A-426A-B52F-924F6BC177A0}
 		{5BF82391-1649-4BAD-A6A2-2571DA9E7935} = {43CBD408-B601-45ED-BB12-9620E26E17B7}
+		{6BB2A57B-601A-4170-82FB-846F8658211E} = {43CBD408-B601-45ED-BB12-9620E26E17B7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C887DAFC-6263-4B10-8085-677E61DEBA6B}
