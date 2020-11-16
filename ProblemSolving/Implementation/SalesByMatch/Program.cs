@@ -1,10 +1,26 @@
 ﻿using System;
+using System.Linq;
+using System.Threading.Tasks;
 
 class Solution
 {
     static int SockMerchant(int n, int[] ar)
     {
+        var allSize = ar.Select(a => a).Distinct();
 
+        var result = 0;
+
+        Parallel.ForEach(allSize, size =>
+        {
+            var count = (from a in ar
+                         where
+                         a == size
+                         select a).Count();
+
+            result += count / 2;
+        });
+
+        return result;
     }
 
     static void Main()
