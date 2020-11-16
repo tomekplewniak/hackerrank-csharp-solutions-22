@@ -50,7 +50,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FindDigits", "Implementatio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ViralAdvertising", "Implementation\ViralAdvertising\ViralAdvertising.csproj", "{6BB2A57B-601A-4170-82FB-846F8658211E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheHurdleRace", "Implementation\TheHurdleRace\TheHurdleRace.csproj", "{FB19C0E0-E4C8-425E-8B6D-4A9995C29C19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TheHurdleRace", "Implementation\TheHurdleRace\TheHurdleRace.csproj", "{FB19C0E0-E4C8-425E-8B6D-4A9995C29C19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalesByMatch", "Implementation\SalesByMatch\SalesByMatch.csproj", "{C057DC43-01C7-4209-92AE-D5095765E498}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -142,6 +144,10 @@ Global
 		{FB19C0E0-E4C8-425E-8B6D-4A9995C29C19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB19C0E0-E4C8-425E-8B6D-4A9995C29C19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB19C0E0-E4C8-425E-8B6D-4A9995C29C19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C057DC43-01C7-4209-92AE-D5095765E498}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C057DC43-01C7-4209-92AE-D5095765E498}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C057DC43-01C7-4209-92AE-D5095765E498}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C057DC43-01C7-4209-92AE-D5095765E498}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -168,6 +174,7 @@ Global
 		{5BF82391-1649-4BAD-A6A2-2571DA9E7935} = {43CBD408-B601-45ED-BB12-9620E26E17B7}
 		{6BB2A57B-601A-4170-82FB-846F8658211E} = {43CBD408-B601-45ED-BB12-9620E26E17B7}
 		{FB19C0E0-E4C8-425E-8B6D-4A9995C29C19} = {43CBD408-B601-45ED-BB12-9620E26E17B7}
+		{C057DC43-01C7-4209-92AE-D5095765E498} = {43CBD408-B601-45ED-BB12-9620E26E17B7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C887DAFC-6263-4B10-8085-677E61DEBA6B}
