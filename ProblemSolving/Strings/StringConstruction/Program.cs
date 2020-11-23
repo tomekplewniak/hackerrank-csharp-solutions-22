@@ -1,10 +1,11 @@
 ﻿using System;
+using System.Linq;
 
 class Solution
 {
     static int StringConstruction(string s)
     {
-
+        return s.Distinct().Count();
     }
 
     static void Main()
