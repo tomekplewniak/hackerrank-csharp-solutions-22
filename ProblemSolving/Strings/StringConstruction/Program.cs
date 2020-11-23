@@ -1,43 +1,18 @@
-﻿using System.CodeDom.Compiler;
-using System.Collections.Generic;
-using System.Collections;
-using System.ComponentModel;
-using System.Diagnostics.CodeAnalysis;
-using System.Globalization;
-using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Runtime.Serialization;
-using System.Text.RegularExpressions;
-using System.Text;
-using System;
+﻿using System;
 
 class Solution
 {
-
-    // Complete the stringConstruction function below.
-    static int stringConstruction(string s)
+    static int StringConstruction(string s)
     {
-
 
     }
 
-    static void Main(string[] args)
+    static void Main()
     {
-        TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
+        var testData = "abab";
 
-        int q = Convert.ToInt32(Console.ReadLine());
+        int result = StringConstruction(testData);
 
-        for (int qItr = 0; qItr < q; qItr++)
-        {
-            string s = Console.ReadLine();
-
-            int result = stringConstruction(s);
-
-            textWriter.WriteLine(result);
-        }
-
-        textWriter.Flush();
-        textWriter.Close();
+        Console.WriteLine(result);
     }
 }
