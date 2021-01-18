@@ -1,40 +1,18 @@
-﻿using System.CodeDom.Compiler;
-using System.Collections.Generic;
-using System.Collections;
-using System.ComponentModel;
-using System.Diagnostics.CodeAnalysis;
-using System.Globalization;
-using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Runtime.Serialization;
-using System.Text.RegularExpressions;
-using System.Text;
-using System;
+﻿using System;
 
 class Solution
 {
-
-    // Complete the cutTheSticks function below.
-    static int[] cutTheSticks(int[] arr)
+    static int[] CutTheSticks(int[] arr)
     {
-
 
     }
 
     static void Main(string[] args)
     {
-        TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
+        int[] arr = new int[] { 1, 2, 3, 4, 3, 3, 2, 1 };
+        
+        int[] result = CutTheSticks(arr);
 
-        int n = Convert.ToInt32(Console.ReadLine());
-
-        int[] arr = Array.ConvertAll(Console.ReadLine().Split(' '), arrTemp => Convert.ToInt32(arrTemp))
-        ;
-        int[] result = cutTheSticks(arr);
-
-        textWriter.WriteLine(string.Join("\n", result));
-
-        textWriter.Flush();
-        textWriter.Close();
+        Console.WriteLine(string.Join("\n", result));
     }
 }
