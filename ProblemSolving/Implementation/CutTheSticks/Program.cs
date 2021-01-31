@@ -1,10 +1,20 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 class Solution
 {
     static int[] CutTheSticks(int[] arr)
     {
+        var result = new List<int>();
+        while (arr.Length > 0)
+        {
+            result.Add(arr.Length);
 
+            arr = arr.Where(val => val != arr.Min()).ToArray();
+        }
+
+        return result.ToArray();
     }
 
     static void Main(string[] args)
