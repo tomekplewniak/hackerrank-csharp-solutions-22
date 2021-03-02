@@ -1,44 +1,23 @@
-﻿using System.CodeDom.Compiler;
-using System.Collections.Generic;
-using System.Collections;
-using System.ComponentModel;
-using System.Diagnostics.CodeAnalysis;
-using System.Globalization;
-using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Runtime.Serialization;
-using System.Text.RegularExpressions;
-using System.Text;
-using System;
+﻿using System;
 
 class Solution
 {
-
-    // Complete the beautifulDays function below.
-    static int beautifulDays(int i, int j, int k)
+    static int BeautifulDays(int i, int j, int k)
     {
-
 
     }
 
-    static void Main(string[] args)
+    static void Main()
     {
-        TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
-
-        string[] ijk = Console.ReadLine().Split(' ');
+        string[] ijk = new string[] { "20", "23", "6" };
 
         int i = Convert.ToInt32(ijk[0]);
-
         int j = Convert.ToInt32(ijk[1]);
-
         int k = Convert.ToInt32(ijk[2]);
 
-        int result = beautifulDays(i, j, k);
+        int result = BeautifulDays(i, j, k);
 
-        textWriter.WriteLine(result);
-
-        textWriter.Flush();
-        textWriter.Close();
+        Console.WriteLine(result);
+        Console.ReadLine();
     }
 }
