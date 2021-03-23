@@ -66,7 +66,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BeautifulDaysAtTheMovies", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EqualizeTheArray", "Implementation\EqualizeTheArray\EqualizeTheArray.csproj", "{78FDCCA6-EA3F-4160-943A-39557A417944}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FairRations", "Implementation\FairRations\FairRations.csproj", "{C13F9A52-9B5A-4E30-97C9-4E2C28A1C35F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FairRations", "Implementation\FairRations\FairRations.csproj", "{C13F9A52-9B5A-4E30-97C9-4E2C28A1C35F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrangeCounter", "Implementation\StrangeCounter\StrangeCounter.csproj", "{EC3724B6-3F19-4F6D-80F4-AEAA1121E0CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -190,6 +192,10 @@ Global
 		{C13F9A52-9B5A-4E30-97C9-4E2C28A1C35F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C13F9A52-9B5A-4E30-97C9-4E2C28A1C35F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C13F9A52-9B5A-4E30-97C9-4E2C28A1C35F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC3724B6-3F19-4F6D-80F4-AEAA1121E0CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC3724B6-3F19-4F6D-80F4-AEAA1121E0CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC3724B6-3F19-4F6D-80F4-AEAA1121E0CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC3724B6-3F19-4F6D-80F4-AEAA1121E0CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -224,6 +230,7 @@ Global
 		{D4F431DF-13F6-4EE7-8EEB-FFB36BA7C220} = {43CBD408-B601-45ED-BB12-9620E26E17B7}
 		{78FDCCA6-EA3F-4160-943A-39557A417944} = {43CBD408-B601-45ED-BB12-9620E26E17B7}
 		{C13F9A52-9B5A-4E30-97C9-4E2C28A1C35F} = {43CBD408-B601-45ED-BB12-9620E26E17B7}
+		{EC3724B6-3F19-4F6D-80F4-AEAA1121E0CD} = {43CBD408-B601-45ED-BB12-9620E26E17B7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C887DAFC-6263-4B10-8085-677E61DEBA6B}
