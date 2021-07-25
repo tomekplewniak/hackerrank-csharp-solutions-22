@@ -14,15 +14,7 @@ using System;
 
 class Result
 {
-
-    /*
-     * Complete the 'minimumDistances' function below.
-     *
-     * The function is expected to return an INTEGER.
-     * The function accepts INTEGER_ARRAY a as parameter.
-     */
-
-    public static int minimumDistances(List<int> a)
+    public static int MinimumDistances(List<int> a)
     {
 
     }
@@ -33,17 +25,12 @@ class Solution
 {
     public static void Main(string[] args)
     {
-        TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
+        var testCase = "7 1 3 4 1 7";
 
-        int n = Convert.ToInt32(Console.ReadLine().Trim());
+        List<int> a = testCase.TrimEnd().Split(' ').ToList().Select(aTemp => Convert.ToInt32(aTemp)).ToList();
 
-        List<int> a = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(aTemp => Convert.ToInt32(aTemp)).ToList();
+        int result = Result.MinimumDistances(a);
 
-        int result = Result.minimumDistances(a);
-
-        textWriter.WriteLine(result);
-
-        textWriter.Flush();
-        textWriter.Close();
+        Console.WriteLine($"{result}");
     }
 }
