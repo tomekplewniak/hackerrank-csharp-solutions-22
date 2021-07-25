@@ -1,24 +1,24 @@
-﻿using System.CodeDom.Compiler;
-using System.Collections.Generic;
-using System.Collections;
-using System.ComponentModel;
-using System.Diagnostics.CodeAnalysis;
-using System.Globalization;
-using System.IO;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
-using System.Runtime.Serialization;
-using System.Text.RegularExpressions;
-using System.Text;
 using System;
 
 class Result
 {
     public static int MinimumDistances(List<int> a)
     {
+        int shortestDistance = a.Count + 1;
+        for (int i = 0; i < a.Count - 1; i++)
+        {
+            int index = a.IndexOf(a[i], i + 1);
+            if (index == -1) continue;
 
+            int distance = Math.Abs(index - i);
+            if (distance < shortestDistance)
+                shortestDistance = distance;
+        }
+
+        return shortestDistance != a.Count + 1 ? shortestDistance : -1;
     }
-
 }
 
 class Solution
